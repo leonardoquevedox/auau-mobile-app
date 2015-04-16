@@ -1,0 +1,12 @@
+<ion-view view-title="People Around You">
+  <ion-content>
+     <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="listener in listeners" type="item-text-wrap">
+        <img ng-src="{{listener.profilePic}}">
+        <h2>{{listener.name}}</h2>
+        <p>{{listener.listeningNow}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
